@@ -11,9 +11,9 @@
 
       <title>Share live code in your browser</title>
       
-      <link rel="stylesheet" href="res/third-party/css-reset/reset.min.css">
-      <link rel="stylesheet" href="res/third-party/codemirror/lib/codemirror.css">
-      <link rel="stylesheet" href="res/third-party/codemirror/theme/monokai.css">
+      <link rel="stylesheet" href="res/vendor/css-reset/reset.min.css">
+      <link rel="stylesheet" href="res/vendor/codemirror/lib/codemirror.css">
+      <link rel="stylesheet" href="res/vendor/codemirror/theme/monokai.css">
       <link rel="stylesheet" href="res/css/main.css">
   </head>
 
@@ -22,17 +22,17 @@
     <textarea id="code" name="code"></textarea>
       
     <!-- Code Mirror -->
-    <script src="res/third-party/codemirror/lib/codemirror.js"></script>
-    <script src="res/third-party/codemirror/mode/css/css.js"></script>
-    <script src="res/third-party/codemirror/mode/clike/clike.js"></script>
-    <script src="res/third-party/codemirror/mode/htmlmixed/htmlmixed.js"></script>
-    <script src="res/third-party/codemirror/mode/javascript/javascript.js"></script>
-    <script src="res/third-party/codemirror/mode/php/php.js"></script>
-    <script src="res/third-party/codemirror/mode/xml/xml.js"></script>
-    <script src="res/third-party/codemirror/addon/edit/matchbrackets.js"></script>
+    <script src="res/vendor/codemirror/lib/codemirror.js"></script>
+    <script src="res/vendor/codemirror/mode/css/css.js"></script>
+    <script src="res/vendor/codemirror/mode/clike/clike.js"></script>
+    <script src="res/vendor/codemirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="res/vendor/codemirror/mode/javascript/javascript.js"></script>
+    <script src="res/vendor/codemirror/mode/php/php.js"></script>
+    <script src="res/vendor/codemirror/mode/xml/xml.js"></script>
+    <script src="res/vendor/codemirror/addon/edit/matchbrackets.js"></script>
 
     <!-- jQuery -->
-    <script src="res/third-party/jquery-min/jquery.min.js"></script>
+    <script src="res/vendor/jquery-min/jquery.min.js"></script>
 
     <!-- Functions -->
     <script src="res/js/checkCode.function.js"></script>
