@@ -32,7 +32,7 @@
     <script src="res/vendor/codemirror/addon/edit/matchbrackets.js"></script>
 
     <!-- jQuery -->
-    <script src="res/vendor/jquery-min/jquery.min.js"></script>
+    <script src="res/vendor/jquery/dist/jquery.min.js"></script>
 
     <!-- Functions -->
     <script src="res/js/checkCode.function.js"></script>
