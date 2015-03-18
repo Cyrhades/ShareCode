@@ -1,7 +1,7 @@
 ShareCode
 =========
 
-Provide a ready-to-use live code sharing tool (no database).
+ShareCode provides a ready-to-use live code sharing tool written in PHP &amp; JS without the need of any specific installation or database.
 
 Installation
 ------------
