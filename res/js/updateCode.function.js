@@ -8,8 +8,8 @@ function updateCode()
   $.post(
     "ajax/code_update.php",
     {
-      slug: window.slug,
-      code: window.editor.getValue()
+      slug: urlSlug,
+      code: editorInstance.getValue()
     }
   );
 }

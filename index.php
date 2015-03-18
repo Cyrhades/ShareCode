@@ -9,7 +9,9 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="description" content="Share live code snippets with anyone, anywhere. Aand keep control of it.">
 
-      <title>Share live code in your browser</title>
+      <title><?= $slug ?> :: ShareCode</title>
+
+      <link rel="icon" type="image/png" href="res/img/favicon.png">
       
       <link rel="stylesheet" href="res/vendor/css-reset/reset.min.css">
       <link rel="stylesheet" href="res/vendor/codemirror/lib/codemirror.css">
@@ -45,7 +47,7 @@
 
     <script>
       // PHP to JS URL slug
-      window.slug = '<?= $slug ?>';
+      var urlSlug = '<?= $slug ?>';
     </script>
 
   </body>

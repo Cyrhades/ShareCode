@@ -1,12 +1,12 @@
 ShareCode
 =========
 
-Provide a ready-to-use code sharing tool (no database).
+Provide a ready-to-use live code sharing tool (no database).
 
 Installation
 ------------
 
-Just copy/paste ShareCode directory wherever from you want to use it.
+Just copy/paste ShareCode directory wherever from you want to use it, or `git clone https://github.com/ivangabriele/ShareCode.git`.
 
 Depending on your rights under Linux, you may have to change them to allow writting under the `codes/` directory.
 
@@ -19,6 +19,15 @@ The first to use the slug is the "administrator" one : only him can change the c
 
 Releases Notes
 --------------
+
+### v1.2.0
+* CodeMirror v4 to v5
+* Autofocus when user is admin
+* Better code optimization and logic (less variables and parameters)
+* Tabulations indentation replaced by indentation with spaces (2)
+* Lose focus when "escape" key is pressed
+* Auto-clean all code files older than 7 days
+* A favicon (yeah I know...)
 
 ### v1.1.0
 * Safer server-side AJAX files (managing wrong slug and no existing file)

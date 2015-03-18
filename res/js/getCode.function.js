@@ -11,17 +11,17 @@ function getCode(callback)
 {
   // Ajax call to get the remote code
   $.get(
-    "ajax/code_get.php?slug=" + window.slug,
+    "ajax/code_get.php?slug=" + urlSlug,
     function(data)
     {
       // We update the local code within the #code textarea
-      window.editor.setValue(data.code);
+      editorInstance.setValue(data.code);
 
       // If callback function is set
       callback();
 
-      // If user is not and admin, we re-launch the loop (to check remote code each 0.5 seconds)
-      if (!window.admin) checkCode();
+      // If user is not the admin, we re-launch the loop (to check remote code each 0.5 seconds)
+      if (!userIsAdmin) checkCode();
     }
   );
 }

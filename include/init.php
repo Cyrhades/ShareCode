@@ -20,6 +20,31 @@ function generateRandomString($length = 10)
   return $randomString;
 }
 
+/**
+ * Deletes all code files older than 7 days from "codes" directory
+ * 
+ * @return void
+ */
+function cleanOldFiles()
+{
+  // If codes directory exists
+  if ($handle = opendir('codes'))
+  {
+    // We parse all of its files
+    while (false !== ($fileName = readdir($handle)))
+    {
+      if ($fileName !== '.' && $fileName !== '..' && $fileName !== 'index.php')
+      {
+        // If code file is older than 7 days, we delete it
+        if ( (date('U') - filemtime('codes/' . $fileName)) > 604800 ) unlink('codes/' . $fileName);
+      }
+    }
+  }
+}
+
+// We clean all old code files
+cleanOldFiles();
+
 // We get the actual URL slug
 $slug = substr($_SERVER['REQUEST_URI'], strripos($_SERVER['REQUEST_URI'], "/")+1);
 
