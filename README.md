@@ -6,7 +6,8 @@ Provide a ready-to-use live code sharing tool (no database).
 Installation
 ------------
 
-Just copy/paste ShareCode directory wherever from you want to use it, or `git clone https://github.com/ivangabriele/ShareCode.git`.
+Just copy/paste ShareCode directory wherever from you want to use it,
+or `git clone https://github.com/ivangabriele/ShareCode.git`.
 
 Depending on your rights under Linux, you may have to change them to allow writting under the `codes/` directory.
 
