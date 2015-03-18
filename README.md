@@ -28,7 +28,7 @@ Releases Notes
 * Tabulations indentation replaced by indentation with spaces (2)
 * Lose focus when "escape" key is pressed
 * Auto-clean all code files older than 7 days
-* Slug is now shown as the page title
+* Slug is now shown in the page title
 * A favicon (yeah I know...)
 
 ### v1.1.0
