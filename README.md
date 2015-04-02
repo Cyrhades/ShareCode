@@ -1,12 +1,13 @@
 ShareCode
 =========
 
-Provide a ready-to-use live code sharing tool (no database).
+ShareCode provides a ready-to-use live code sharing tool written in PHP & JS without the need of any specific installation or database.
 
 Installation
 ------------
 
-Just copy/paste ShareCode directory wherever from you want to use it, or `git clone https://github.com/ivangabriele/ShareCode.git`.
+Just copy/paste ShareCode directory wherever from you want to use it,
+or `git clone https://github.com/ivangabriele/ShareCode.git`.
 
 Depending on your rights under Linux, you may have to change them to allow writting under the `codes/` directory.
 
@@ -27,6 +28,7 @@ Releases Notes
 * Tabulations indentation replaced by indentation with spaces (2)
 * Lose focus when "escape" key is pressed
 * Auto-clean all code files older than 7 days
+* Slug is now shown in the page title
 * A favicon (yeah I know...)
 
 ### v1.1.0
