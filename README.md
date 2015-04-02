@@ -21,6 +21,10 @@ The first to use the slug is the "administrator" one : only him can change the c
 Releases Notes
 --------------
 
+### v1.2.1
+* Fix code sharing problems
+* Cancels the scroll re-initializing for each reloading
+
 ### v1.2.0
 * CodeMirror v4 to v5
 * Autofocus when user is admin
