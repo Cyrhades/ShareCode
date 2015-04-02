@@ -18,21 +18,9 @@ function checkCode()
       // If this is the first loading (= Code Mirror is not attached yet)
       if (editorInstance === undefined)
       {
-        // If HTTP status code is 201
-        // (because this user is the first to use this slug, thus the code file has just been created)
-        if (jqXHR.status == 201)
-        {
-          // We install the 'keyup' event handler on the #code textarea
-          $('textarea').keyup(updateCode);
-
-          // We set the global variable userIsAdmin to TRUE
-          userIsAdmin = true;
-        }
-        else
-        {
-          // We set the global variable userIsAdmin to FALSE
-          userIsAdmin = false;
-        }
+        // If HTTP status code is 201 (because this user is the first to use this slug, thus the code file has just been created),
+        // we set the global variable userIsAdmin to TRUE (else FALSE)
+        userIsAdmin = (jqXHR.status == 201) ? true : false;
 
         // We load Code Mirror
         loadCodeMirror();
@@ -47,6 +35,8 @@ function checkCode()
       }
       else
       {
+        //console.log(123);
+
         // We check again potential new code in 0.5 seconds
         window.setTimeout(checkCode, 500);
       }

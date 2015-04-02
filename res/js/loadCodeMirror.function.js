@@ -17,14 +17,14 @@ function loadCodeMirror()
       matchBrackets: true,
       mode: "application/x-httpd-php",
       readOnly: !userIsAdmin,
-      smartIndent: true,
+      smartIndent: false,
       theme: "monokai"
     }
   );
 
+  // If the user is the administrator, we install the 'change' event handler on the CodeMirror instance
+  if (userIsAdmin) editorInstance.on('change', updateCode);
+
   // We install the 'keyup' event handler on the document to unfocus when "escape" key is pressed
-  $(document).keyup(function(event)
-  {
-    if (event.keyCode == 27) editorInstance.getInputField().blur();
-  });
+  $(document).keyup(function(event) { if (event.keyCode == 27) editorInstance.getInputField().blur(); });
 }
