@@ -9,8 +9,8 @@ function loadCodeMirror()
     document.getElementById('code'),
     {
       autofocus: userIsAdmin,
-      tabSize: 2,
-      indentUnit: 2,
+      tabSize: 4,
+      indentUnit: 4,
       indentWithTabs: false,
       lineNumbers: true,
       lineWrapping: true,
