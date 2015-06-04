@@ -6,7 +6,7 @@ ShareCode provides a ready-to-use live code sharing tool written in PHP & JS wit
 Online Version
 --------------
 
-If you don't care about setting it up and just want to use it, I created an (free and ad-free) online version available at [http://sharecode.so](http://sharecode.so).
+If you don't care about setting it up and just want to use it, I created an online version (free and ad-free) available at [http://sharecode.so](http://sharecode.so).
 
 Installation
 ------------
