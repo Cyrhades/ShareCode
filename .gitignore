@@ -1,6 +1,2 @@
-# Bower files
-/.bowerrc
-/bower.json
-
 # Shared source code text files
 /codes/*.txt
