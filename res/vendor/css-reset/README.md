@@ -3,6 +3,13 @@ CSS-Reset
 
 Improvements of [Eric Meyer's Reset CSS (v2.0)](http://meyerweb.com/eric/tools/css/reset/) :
 
+Installation
+------------
+
+### Bower
+
+`bower install css-reset`
+
 Releases Notes
 --------------
 

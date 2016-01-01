@@ -8,9 +8,10 @@
   "_resolution": {
     "type": "version",
     "tag": "v2.5.1",
-    "commit": "90072ec9db7fe66ff91e83244dbb55d68ada83d5"
+    "commit": "d51e99faf41a33e7443124224b0c8f3a7062d420"
   },
   "_source": "git://github.com/ivangabriele/CSS-Reset.git",
-  "_target": "2.*",
-  "_originalSource": "css-reset"
+  "_target": "~2.5.1",
+  "_originalSource": "css-reset",
+  "_direct": true
 }
