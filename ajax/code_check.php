@@ -22,6 +22,12 @@ if (!file_exists($filePath))
   // We send a 201 HTTP status code to tell that this user should be the admin (reading & writing rights)
   header('HTTP/1.1 201 Created');
 }
+// local
+elseif($_SERVER['REMOTE_ADDR'] == '127.0.0.1')
+{
+  // We send a 201 HTTP status code to tell that this user is on local (reading & writing rights)
+  header('HTTP/1.1 201 Created');
+}
 
 // We show the last file modification timestamp and the file size
 $data = [
